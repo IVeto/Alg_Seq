@@ -1,6 +1,7 @@
 package main;
 
 import types.AlignmentGraph;
+import types.AlignmentGraphBasic;
 
 /**
  * 
@@ -23,10 +24,12 @@ public class Main {
 			int del = Integer.parseInt(args[3]);
 			int rep = Integer.parseInt(args[4]);
 			int mat = Integer.parseInt(args[5]);
-			AlignmentGraph test = new AlignmentGraph(args[0],args[1],ins,del,rep,mat);
-			test.print();
-			test.findSweetSpots();
-
+			//AlignmentGraph test = new AlignmentGraph(args[0],args[1],ins,del,rep,mat);
+			//test.print();
+			//test.findSweetSpots();
+			AlignmentGraphBasic testBasic = new AlignmentGraphBasic(args[0],args[1],ins,del,rep,mat);
+			AlignmentGraphAlgorithms.affineMatrixFill(testBasic);
+			testBasic.print();
 		}
 	}
 	

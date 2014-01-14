@@ -1,12 +1,12 @@
 package types;
-public class AlignmentGraphOld {
+public class AlignmentGraphForSimpleCosts {
 	
 	private char[] s1;
 	private char[] s2;
 	private int[] effort = new int[3];
 	private int[][][] matrix;
 
-	public AlignmentGraphOld(String t1,String t2,int e1,int e2,int e3)
+	public AlignmentGraphForSimpleCosts(String t1,String t2,int e1,int e2,int e3)
 	{
 		this.s1=t1.toCharArray();
 		this.s2=t2.toCharArray();

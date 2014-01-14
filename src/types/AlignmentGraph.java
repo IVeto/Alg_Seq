@@ -97,7 +97,6 @@ public class AlignmentGraph {
 	public void findSweetSpots()
 	{
 		int x,y;
-		//System.out.println(matrix.length + ":" +  matrix[1].length);
 		for(y=0;y<matrix.length;y++)
 		{
 			for(x=0;x<matrix[y].length;x++)
